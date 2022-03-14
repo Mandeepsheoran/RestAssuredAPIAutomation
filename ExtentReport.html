@@ -1,0 +1,3827 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 14, 2022 03:18:27 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('device-view')">
+<a id="nav-device" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tablet"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Mandeep</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">QUICKREGRESSION</a><a class="dropdown-item" href="#">REGRESSION</a><a class="dropdown-item" href="#">SMOKE</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i></a>
+<ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">GET</a><a class="dropdown-item" href="#">POST</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author="Mandeep"
+          tag="QUICKREGRESSION"
+          device="GET">
+          <div class="test-detail">
+            <p class="name">Flight Delayed</p>
+            <p class="text-sm">
+              <span>15:18:27 PM</span> / <span>00:00:06:003</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Flight Delayed</h5>
+<span class='badge badge-success'>03.14.2022 15:18:27</span>
+<span class='badge badge-danger'>03.14.2022 15:18:33</span>
+<span class='badge badge-default'>00:00:06:003</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">QUICKREGRESSION</span>
+<span class="badge badge-pill badge-default">GET</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:31 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:32 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create([
+    {
+        "id": 1,
+        "title": "postman testing",
+        "author": "mandeep"
+    },
+    {
+        "id": 508,
+        "firstname": "pamela",
+        "lastname": "max e. mumm"
+    },
+    {
+        "id": 273,
+        "firstname": "louie",
+        "lastname": "phil rupp"
+    },
+    {
+        "id": 826,
+        "firstname": "britt",
+        "lastname": "theresa brown"
+    },
+    {
+        "id": 36,
+        "firstname": "madalene",
+        "lastname": "adam bomb"
+    },
+    {
+        "id": 808,
+        "firstname": "odell",
+        "lastname": "i. lasch"
+    },
+    {
+        "id": 116,
+        "firstname": "felica",
+        "lastname": "mary gold"
+    },
+    {
+        "id": 145,
+        "firstname": "carolee",
+        "lastname": "cody pendant"
+    },
+    {
+        "id": 616,
+        "firstname": "christoper",
+        "lastname": "i. ron stomach"
+    },
+    {
+        "id": 948,
+        "firstname": "herbert",
+        "lastname": "nick o'teen"
+    },
+    {
+        "id": 277,
+        "firstname": "kasey",
+        "lastname": "howe d. pardner"
+    },
+    {
+        "id": 505,
+        "firstname": "cherrie",
+        "lastname": "robin meeblind"
+    },
+    {
+        "id": 547,
+        "firstname": "abdul",
+        "lastname": "al o'moaney"
+    },
+    {
+        "id": 893,
+        "firstname": "zachery",
+        "lastname": "liv good"
+    },
+    {
+        "updateField": "flight_status_actual",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "23f91b2b-eb1d-409f-a564-678950910207",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "iata_airline": "UA",
+                "flight_number": "1001",
+                "airline": "United Airlines",
+                "tail_number": "CGBHN"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "CGBHN",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "iata_airline": "UA",
+                    "flight_number": "1002",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 949
+    },
+    {
+        "id": 898,
+        "firstname": "dusty",
+        "lastname": "raney schauer"
+    },
+    {
+        "updateField": "flight_status_actual",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "23f91b2b-eb1d-409f-a564-678950910207",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "iata_airline": "UA",
+                "flight_number": "1001",
+                "airline": "United Airlines",
+                "tail_number": "CGBHN"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "CGBHN",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "iata_airline": "UA",
+                    "flight_number": "1002",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 950
+    },
+    {
+        "id": 687,
+        "firstname": "twanna",
+        "lastname": "may o'nays"
+    },
+    {
+        "id": 73,
+        "firstname": "azzie",
+        "lastname": "charity case"
+    },
+    {
+        "updateField": "flight_status_actual",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "945",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "shanta",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "846": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "juan fortharoad"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "juan fortharoad",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "846": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 951
+    },
+    {
+        "updateField": "aircraftType_updated",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "44",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "177": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "ted e. baer"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "ted e. baer",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "177": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 952
+    },
+    {
+        "updateField": "aircraft_updated",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "365",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "241": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "will power"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "will power",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "241": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 953
+    },
+    {
+        "updateField": "flight_status_actual",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "99",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "marcelene",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "828": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "tyrone shoes"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "tyrone shoes",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "828": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 954
+    },
+    {
+        "updateField": "flight_updated",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "289",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "525": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "olive branch"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "olive branch",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "525": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 955
+    },
+    {
+        "updateField": "flight_updated",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "582",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "758": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "shanda lear"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "shanda lear",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "758": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 956
+    },
+    {
+        "id": 848,
+        "firstname": "zack",
+        "lastname": "bill loney"
+    },
+    {
+        "updateField": "gate_updated",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "821",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "907": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "bjorn free"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "bjorn free",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "907": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 957
+    },
+    {
+        "updateField": "flight_status_actual",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "304",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "72": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "pearl e. whites"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "pearl e. whites",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "72": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 958
+    },
+    {
+        "updateField": "flight_status_actual",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "564",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "johna",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "158": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "ty malone"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "ty malone",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "158": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 959
+    },
+    {
+        "updateField": "flight_linked",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "163",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "741": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "ryan coke"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "ryan coke",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "741": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 960
+    },
+    {
+        "updateField": "stand_updated",
+        "iataAirportCode": "LGA",
+        "adi": "arrival",
+        "previous": null,
+        "current": "2022-02-01T08:42:00-0500",
+        "scheduled": "2022-02-01T07:25:00-0500",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "actual": "2022-02-01T08:42:00-0500",
+        "duration": null,
+        "operationDate": null,
+        "flightRecord": {
+            "flightId": "359",
+            "actual": "20220201T08:42:000500",
+            "adi": "arrival",
+            "aircraft": "A319",
+            "departureAirportCode": "AMS",
+            "arrivalAirportCode": "LGA",
+            "city": "Haarlemmermeer",
+            "estimated": "2022-02-01T08:45:00-0500",
+            "gate": "15B",
+            "stand": "44",
+            "gateRemarkText": "Concourse B",
+            "operatingCarrier": {
+                "139": "1001",
+                "iata_airline": "UA",
+                "airline": "United Airlines",
+                "tail_number": "cheri pitts"
+            },
+            "operationDate": "2022-02-01",
+            "scheduled": "2022-02-01T07:25:000500",
+            "status": "LN",
+            "statusText": "Landed",
+            "tailNumber": "cheri pitts",
+            "terminal": "",
+            "paxCount": 124,
+            "standSlots": [
+                {
+                    "stand": "44",
+                    "start_time": "2022-02-01T08:42:00-0500",
+                    "end_time": "2022-02-01T09:50:00-0500"
+                }
+            ],
+            "linkedFlight": {
+                "adi": "departure",
+                "departureAirportCode": "LGA",
+                "operatingCarrier": {
+                    "139": "1002",
+                    "iata_airline": "UA",
+                    "airline": "United Airlines"
+                },
+                "scheduled": "2022-02-01T08:30:00-0500"
+            }
+        },
+        "id": 961
+    }
+]); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:33 PM</td>
+        <td>
+          <span class='badge white-text green'>getAllFlightDetails is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author="Mandeep"
+          tag="REGRESSION"
+          device="GET">
+          <div class="test-detail">
+            <p class="name">Stand Allocated</p>
+            <p class="text-sm">
+              <span>15:18:33 PM</span> / <span>00:00:00:160</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Stand Allocated</h5>
+<span class='badge badge-success'>03.14.2022 15:18:33</span>
+<span class='badge badge-danger'>03.14.2022 15:18:33</span>
+<span class='badge badge-default'>00:00:00:160</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">GET</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:33 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:33 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "id": 1,
+    "title": "postman testing",
+    "author": "mandeep"
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:18:33 PM</td>
+        <td>
+          <span class='badge white-text red'>java.lang.AssertionError: 
+Expecting actual not to be null</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="Mandeep"
+          tag="REGRESSION"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">AircraftType Updated</p>
+            <p class="text-sm">
+              <span>15:18:33 PM</span> / <span>00:00:00:750</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AircraftType Updated</h5>
+<span class='badge badge-success'>03.14.2022 15:18:33</span>
+<span class='badge badge-danger'>03.14.2022 15:18:34</span>
+<span class='badge badge-default'>00:00:00:750</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({
+   "updateField":"aircraftType_updated",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"574",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"Haarlemmermeer",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "560":"1001",
+         "airline":"United Airlines",
+         "tail_number":"oliver sutton"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"oliver sutton",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "560":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "updateField": "aircraftType_updated",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "574",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "Haarlemmermeer",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "560": "1001",
+            "iata_airline": "UA",
+            "airline": "United Airlines",
+            "tail_number": "oliver sutton"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "oliver sutton",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "560": "1002",
+                "iata_airline": "UA",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    },
+    "id": 962
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          <span class='badge white-text green'>postFlightAircraftTypeUpdated is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="Mandeep"
+          tag="REGRESSION"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Aircraft Updated</p>
+            <p class="text-sm">
+              <span>15:18:34 PM</span> / <span>00:00:00:105</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Aircraft Updated</h5>
+<span class='badge badge-success'>03.14.2022 15:18:34</span>
+<span class='badge badge-danger'>03.14.2022 15:18:34</span>
+<span class='badge badge-default'>00:00:00:105</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({
+   "updateField":"aircraft_updated",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"118",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"Haarlemmermeer",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "547":"1001",
+         "airline":"United Airlines",
+         "tail_number":"marco destinkshun"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"marco destinkshun",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "547":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "updateField": "aircraft_updated",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "118",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "Haarlemmermeer",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "547": "1001",
+            "iata_airline": "UA",
+            "airline": "United Airlines",
+            "tail_number": "marco destinkshun"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "marco destinkshun",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "547": "1002",
+                "iata_airline": "UA",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    },
+    "id": 963
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          <span class='badge white-text green'>postFlightAircraftUpdated is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author="Mandeep"
+          tag="SMOKE"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Flight Arrived</p>
+            <p class="text-sm">
+              <span>15:18:34 PM</span> / <span>00:00:00:167</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Flight Arrived</h5>
+<span class='badge badge-success'>03.14.2022 15:18:34</span>
+<span class='badge badge-danger'>03.14.2022 15:18:34</span>
+<span class='badge badge-default'>00:00:00:167</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({
+   "updateField":"flight_status_actual",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"469",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"liana",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "52":"1001",
+         "airline":"United Airlines",
+         "tail_number":"lou zar"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"lou zar",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "52":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "updateField": "flight_status_actual",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "469",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "liana",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "52": "1001",
+            "iata_airline": "UA",
+            "airline": "United Airlines",
+            "tail_number": "lou zar"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "lou zar",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "52": "1002",
+                "iata_airline": "UA",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    },
+    "id": 964
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          <span class='badge white-text green'>postFlightArrived is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author="Mandeep"
+          tag="SMOKE"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Flight Cancelled</p>
+            <p class="text-sm">
+              <span>15:18:34 PM</span> / <span>00:00:00:073</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Flight Cancelled</h5>
+<span class='badge badge-success'>03.14.2022 15:18:34</span>
+<span class='badge badge-danger'>03.14.2022 15:18:34</span>
+<span class='badge badge-default'>00:00:00:073</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({
+   "updateField":"flight_updated",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"333",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"Haarlemmermeer",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "733":"1001",
+         "airline":"United Airlines",
+         "tail_number":"nick ovtime"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"nick ovtime",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "733":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          <span class='badge white-text red'>io.restassured.internal.http.ResponseParseException: status code: 201, reason phrase: Created</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author="Mandeep"
+          tag="SMOKE"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Flight Delayed</p>
+            <p class="text-sm">
+              <span>15:18:34 PM</span> / <span>00:00:00:582</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Flight Delayed</h5>
+<span class='badge badge-success'>03.14.2022 15:18:34</span>
+<span class='badge badge-danger'>03.14.2022 15:18:35</span>
+<span class='badge badge-default'>00:00:00:582</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({
+   "updateField":"flight_updated",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"746",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"Haarlemmermeer",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "607":"1001",
+         "airline":"United Airlines",
+         "tail_number":"rosa shore"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"rosa shore",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "607":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:34 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:35 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:35 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-10'></div>
+ <script>
+  function jsonTreeCreate10() { 
+   document.getElementById('code-block-json-10').innerHTML = JSONTree.create({
+    "updateField": "flight_updated",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "746",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "Haarlemmermeer",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "607": "1001",
+            "iata_airline": "UA",
+            "airline": "United Airlines",
+            "tail_number": "rosa shore"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "rosa shore",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "607": "1002",
+                "iata_airline": "UA",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    },
+    "id": 966
+}); 
+  }
+  jsonTreeCreate10();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:35 PM</td>
+        <td>
+          <span class='badge white-text green'>postFlightDelayed is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author="Mandeep"
+          tag="REGRESSION"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Unlinked flight</p>
+            <p class="text-sm">
+              <span>15:18:35 PM</span> / <span>00:00:00:640</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Unlinked flight</h5>
+<span class='badge badge-success'>03.14.2022 15:18:35</span>
+<span class='badge badge-danger'>03.14.2022 15:18:36</span>
+<span class='badge badge-default'>00:00:00:640</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create({"id":126,"firstname":"donovan","lastname":"mason jarr"}); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-12'></div>
+ <script>
+  function jsonTreeCreate12() { 
+   document.getElementById('code-block-json-12').innerHTML = JSONTree.create({
+    "id": 126,
+    "firstname": "donovan",
+    "lastname": "mason jarr"
+}); 
+  }
+  jsonTreeCreate12();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          <span class='badge white-text green'>postFlightDetails is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="9"
+          author="Mandeep"
+          tag="SMOKE"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Gate Updated</p>
+            <p class="text-sm">
+              <span>15:18:36 PM</span> / <span>00:00:00:043</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Gate Updated</h5>
+<span class='badge badge-success'>03.14.2022 15:18:36</span>
+<span class='badge badge-danger'>03.14.2022 15:18:36</span>
+<span class='badge badge-default'>00:00:00:043</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create({
+   "updateField":"gate_updated",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"660",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"Haarlemmermeer",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "155":"1001",
+         "airline":"United Airlines",
+         "tail_number":"tom katt"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"tom katt",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "155":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          <span class='badge white-text red'>org.apache.http.NoHttpResponseException: localhost:3000 failed to respond</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author="Mandeep"
+          tag="QUICKREGRESSION"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Go to Gate</p>
+            <p class="text-sm">
+              <span>15:18:36 PM</span> / <span>00:00:00:586</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Go to Gate</h5>
+<span class='badge badge-success'>03.14.2022 15:18:36</span>
+<span class='badge badge-danger'>03.14.2022 15:18:36</span>
+<span class='badge badge-default'>00:00:00:586</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">QUICKREGRESSION</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-14'></div>
+ <script>
+  function jsonTreeCreate14() { 
+   document.getElementById('code-block-json-14').innerHTML = JSONTree.create({
+   "updateField":"flight_status_estimated",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"170",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"Haarlemmermeer",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "938":"1001",
+         "airline":"United Airlines",
+         "tail_number":"crystal claire waters"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"crystal claire waters",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "938":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate14();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create({
+    "updateField": "flight_status_estimated",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "170",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "Haarlemmermeer",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "938": "1001",
+            "iata_airline": "UA",
+            "airline": "United Airlines",
+            "tail_number": "crystal claire waters"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "crystal claire waters",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "938": "1002",
+                "iata_airline": "UA",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    },
+    "id": 968
+}); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          <span class='badge white-text green'>postFlightGoToGate is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author="Mandeep"
+          tag="REGRESSION"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Flight Departed - In Air</p>
+            <p class="text-sm">
+              <span>15:18:36 PM</span> / <span>00:00:00:070</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Flight Departed - In Air</h5>
+<span class='badge badge-success'>03.14.2022 15:18:36</span>
+<span class='badge badge-danger'>03.14.2022 15:18:36</span>
+<span class='badge badge-default'>00:00:00:070</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({
+   "updateField":"flight_status_actual",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"319",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"Haarlemmermeer",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "734":"1001",
+         "airline":"United Airlines",
+         "tail_number":"justin inch"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"justin inch",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "734":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-17'></div>
+ <script>
+  function jsonTreeCreate17() { 
+   document.getElementById('code-block-json-17').innerHTML = JSONTree.create({
+    "updateField": "flight_status_actual",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "319",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "Haarlemmermeer",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "734": "1001",
+            "iata_airline": "UA",
+            "airline": "United Airlines",
+            "tail_number": "justin inch"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "justin inch",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "734": "1002",
+                "iata_airline": "UA",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    },
+    "id": 969
+}); 
+  }
+  jsonTreeCreate17();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          <span class='badge white-text green'>postFlightInAir is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author="Mandeep"
+          tag="SMOKE"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Flight Landed</p>
+            <p class="text-sm">
+              <span>15:18:36 PM</span> / <span>00:00:00:062</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Flight Landed</h5>
+<span class='badge badge-success'>03.14.2022 15:18:36</span>
+<span class='badge badge-danger'>03.14.2022 15:18:36</span>
+<span class='badge badge-default'>00:00:00:062</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-18'></div>
+ <script>
+  function jsonTreeCreate18() { 
+   document.getElementById('code-block-json-18').innerHTML = JSONTree.create({
+   "updateField":"flight_status_actual",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"484",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"rosette",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "96":"1001",
+         "airline":"United Airlines",
+         "tail_number":"joanna hand"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"joanna hand",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "96":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate18();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-19'></div>
+ <script>
+  function jsonTreeCreate19() { 
+   document.getElementById('code-block-json-19').innerHTML = JSONTree.create({
+    "updateField": "flight_status_actual",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "484",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "rosette",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "96": "1001",
+            "iata_airline": "UA",
+            "airline": "United Airlines",
+            "tail_number": "joanna hand"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "joanna hand",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "96": "1002",
+                "iata_airline": "UA",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    },
+    "id": 970
+}); 
+  }
+  jsonTreeCreate19();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          <span class='badge white-text green'>postFlightLanded is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="13"
+          author="Mandeep"
+          tag="REGRESSION"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Flight Linked</p>
+            <p class="text-sm">
+              <span>15:18:36 PM</span> / <span>00:00:00:041</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Flight Linked</h5>
+<span class='badge badge-success'>03.14.2022 15:18:36</span>
+<span class='badge badge-danger'>03.14.2022 15:18:36</span>
+<span class='badge badge-default'>00:00:00:041</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-20'></div>
+ <script>
+  function jsonTreeCreate20() { 
+   document.getElementById('code-block-json-20').innerHTML = JSONTree.create({
+   "updateField":"flight_linked",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"791",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"Haarlemmermeer",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "924":"1001",
+         "airline":"United Airlines",
+         "tail_number":"ivan oder"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"ivan oder",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "924":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate20();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          <span class='badge white-text red'>io.restassured.internal.http.ResponseParseException: status code: 201, reason phrase: Created</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author="Mandeep"
+          tag="QUICKREGRESSION"
+          device="POST">
+          <div class="test-detail">
+            <p class="name">Stand Update</p>
+            <p class="text-sm">
+              <span>15:18:36 PM</span> / <span>00:00:00:626</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Stand Update</h5>
+<span class='badge badge-success'>03.14.2022 15:18:36</span>
+<span class='badge badge-danger'>03.14.2022 15:18:37</span>
+<span class='badge badge-default'>00:00:00:626</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">QUICKREGRESSION</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Request body is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-21'></div>
+ <script>
+  function jsonTreeCreate21() { 
+   document.getElementById('code-block-json-21').innerHTML = JSONTree.create({
+   "updateField":"stand_updated",
+   "iataAirportCode":"LGA",
+   "adi":"arrival",
+   "previous":null,
+   "current":"2022-02-01T08:42:00-0500",
+   "scheduled":"2022-02-01T07:25:00-0500",
+   "estimated":"2022-02-01T08:45:00-0500",
+   "actual":"2022-02-01T08:42:00-0500",
+   "duration":null,
+   "operationDate":null,
+   "flightRecord":{
+      "flightId":"383",
+      "actual":"20220201T08:42:000500",
+      "adi":"arrival",
+      "aircraft":"A319",
+      "departureAirportCode":"AMS",
+      "arrivalAirportCode":"LGA",
+      "city":"Haarlemmermeer",
+      "estimated":"2022-02-01T08:45:00-0500",
+      "gate":"15B",
+      "stand":"44",
+      "gateRemarkText":"Concourse B",
+      "operatingCarrier":{
+         "iata_airline":"UA",
+         "509":"1001",
+         "airline":"United Airlines",
+         "tail_number":"rhoda mule"
+      },
+      "operationDate":"2022-02-01",
+      "scheduled":"2022-02-01T07:25:000500",
+      "status":"LN",
+      "statusText":"Landed",
+      "tailNumber":"rhoda mule",
+      "terminal":"",
+      "paxCount":124,
+      "standSlots":[
+         {
+            "stand":"44",
+            "start_time":"2022-02-01T08:42:00-0500",
+            "end_time":"2022-02-01T09:50:00-0500"
+         }
+      ],
+      "linkedFlight":{
+         "adi":"departure",
+         "departureAirportCode":"LGA",
+         "operatingCarrier":{
+            "iata_airline":"UA",
+            "509":"1002",
+            "airline":"United Airlines"
+         },
+         "scheduled":"2022-02-01T08:30:00-0500"
+      }
+   }
+}); 
+  }
+  jsonTreeCreate21();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:36 PM</td>
+        <td>
+          Content-Type : application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:18:37 PM</td>
+        <td>
+          Response is given below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:37 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-22'></div>
+ <script>
+  function jsonTreeCreate22() { 
+   document.getElementById('code-block-json-22').innerHTML = JSONTree.create({
+    "updateField": "stand_updated",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "383",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "Haarlemmermeer",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "509": "1001",
+            "iata_airline": "UA",
+            "airline": "United Airlines",
+            "tail_number": "rhoda mule"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "rhoda mule",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "509": "1002",
+                "iata_airline": "UA",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    },
+    "id": 972
+}); 
+  }
+  jsonTreeCreate22();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:18:37 PM</td>
+        <td>
+          <span class='badge white-text green'>postFlightStandUpdate is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">QUICKREGRESSION</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>QUICKREGRESSION</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Flight Delayed</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>Go to Gate</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>Stand Update</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">REGRESSION</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>REGRESSION</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Stand Allocated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>AircraftType Updated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Aircraft Updated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Unlinked flight</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Flight Departed - In Air</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Flight Linked</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">SMOKE</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>SMOKE</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Flight Arrived</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Flight Cancelled</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Flight Delayed</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Gate Updated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Flight Landed</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view device-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Device</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">GET</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>GET</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Flight Delayed</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Stand Allocated</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">POST</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>POST</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>AircraftType Updated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Aircraft Updated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Flight Arrived</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Flight Cancelled</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Flight Delayed</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Unlinked flight</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Gate Updated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>Go to Gate</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Flight Departed - In Air</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Flight Landed</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Flight Linked</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>Stand Update</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">Mandeep</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Mandeep</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Flight Delayed</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Stand Allocated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>AircraftType Updated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Aircraft Updated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Flight Arrived</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Flight Cancelled</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Flight Delayed</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Unlinked flight</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Gate Updated</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>Go to Gate</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Flight Departed - In Air</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Flight Landed</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Flight Linked</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>Stand Update</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 14, 2022 03:18:27 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 14, 2022 03:18:37 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>10</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='71%'>
+<b>10</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='28%'><b>4</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='29%'><b>21</b> events passed</small></div>
+<div>
+<small data-tooltip='5%'><b>4</b> events failed,
+<b data-tooltip='%'>47</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Flight Delayed":6.003,"Stand Allocated":0.16,"AircraftType Updated":0.75,"Aircraft Updated":0.105,"Flight Arrived":0.167,"Flight Cancelled":0.073,"Flight Delayed":0.582,"Unlinked flight":0.64,"Gate Updated":0.043,"Go to Gate":0.586,"Flight Departed - In Air":0.07,"Flight Landed":0.062,"Flight Linked":0.041,"Stand Update":0.626
+};
+</script>
+<div class="row">
+<div class="col-md-4 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Mandeep</td>
+<td>10</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>71.429%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>QUICKREGRESSION</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>REGRESSION</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>66.667%</td>
+</tr>
+<tr>
+<td>SMOKE</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>60%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-md-4 device-container">
+<div class="card">
+<div class="card-header"><p>Device</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>9</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 10,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 21,
+failEvents: 4,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 47
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

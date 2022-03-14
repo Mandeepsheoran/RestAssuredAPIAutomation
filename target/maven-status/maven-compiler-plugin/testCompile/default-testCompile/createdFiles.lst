@@ -1,0 +1,4 @@
+aero\sita\digitaltwins\tests\BaseTest.class
+aero\sita\digitaltwins\tests\DataProviderTest.class
+aero\sita\digitaltwins\tests\GetTests.class
+aero\sita\digitaltwins\tests\PostTests.class

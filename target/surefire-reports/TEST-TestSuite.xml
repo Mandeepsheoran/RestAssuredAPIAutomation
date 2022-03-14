@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="12.628" tests="14" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Mandeep.Sheoran\eclipse-workspace\DT_Automation_Framework"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Mandeep.Sheoran\eclipse-workspace\DT_Automation_Framework"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\MANDEE~1.SHE\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\Mandeep.Sheoran\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6150889003271222012.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_291/bin/server;C:/Program Files/Java/jre1.8.0_291/bin;C:/Program Files/Java/jre1.8.0_291/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_202\bin;G:\apache-maven-3.1.0\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Kubernetes\Minikube;C:\Users\Mandeep.Sheoran\scoop\shims;C:\Users\Mandeep.Sheoran\AppData\Local\Microsoft\WindowsApps;;C:\Users\Mandeep.Sheoran\AppData\Local\Programs\Microsoft VS Code\bin;G:\eclipse-jee-oxygen-R-win32-x86_64\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Mandeep.Sheoran"/>
+    <property name="user.timezone" value="GMT+04:00"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Mandeep.Sheoran"/>
+    <property name="java.class.path" value="/G:/eclipse-jee-oxygen-R-win32-x86_64/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.8.0.20170516-2042/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Mandeep.Sheoran\eclipse-workspace\DT_Automation_Framework\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="getAllFlightDetails" classname="aero.sita.digitaltwins.tests.GetTests" time="6.005"/>
+  <testcase name="getSingleFlightDetail" classname="aero.sita.digitaltwins.tests.GetTests" time="0.183">
+    <failure message="&#10;Expecting actual not to be null" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expecting actual not to be null
+	at aero.sita.digitaltwins.tests.GetTests.getSingleFlightDetail(GetTests.java:60)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:3000/posts/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+  </testcase>
+  <testcase name="postFlightAircraftTypeUpdated" classname="aero.sita.digitaltwins.tests.PostTests" time="0.795"/>
+  <testcase name="postFlightAircraftUpdated" classname="aero.sita.digitaltwins.tests.PostTests" time="0.06"/>
+  <testcase name="postFlightArrived" classname="aero.sita.digitaltwins.tests.PostTests" time="0.167"/>
+  <testcase name="postFlightCancelled" classname="aero.sita.digitaltwins.tests.PostTests" time="0.079">
+    <failure message="status code: 201, reason phrase: Created" type="io.restassured.internal.http.ResponseParseException">io.restassured.internal.http.ResponseParseException: status code: 201, reason phrase: Created
+	at aero.sita.digitaltwins.tests.PostTests.postFlightCancelled(PostTests.java:179)
+Caused by: org.apache.http.ConnectionClosedException: Premature end of chunk coded message body: closing chunk expected
+	at aero.sita.digitaltwins.tests.PostTests.postFlightCancelled(PostTests.java:179)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:3000/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "updateField": "flight_updated",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "333",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "Haarlemmermeer",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "iata_airline": "UA",
+            "733": "1001",
+            "airline": "United Airlines",
+            "tail_number": "nick ovtime"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "nick ovtime",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "iata_airline": "UA",
+                "733": "1002",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postFlightDelayed" classname="aero.sita.digitaltwins.tests.PostTests" time="0.594"/>
+  <testcase name="postFlightDetails" classname="aero.sita.digitaltwins.tests.PostTests" time="0.631"/>
+  <testcase name="postFlightGateUpdated" classname="aero.sita.digitaltwins.tests.PostTests" time="0.043">
+    <failure message="localhost:3000 failed to respond" type="org.apache.http.NoHttpResponseException">org.apache.http.NoHttpResponseException: localhost:3000 failed to respond
+	at aero.sita.digitaltwins.tests.PostTests.postFlightGateUpdated(PostTests.java:127)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:3000/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "updateField": "gate_updated",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "660",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "Haarlemmermeer",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "iata_airline": "UA",
+            "155": "1001",
+            "airline": "United Airlines",
+            "tail_number": "tom katt"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "tom katt",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "iata_airline": "UA",
+                "155": "1002",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postFlightGoToGate" classname="aero.sita.digitaltwins.tests.PostTests" time="0.587"/>
+  <testcase name="postFlightInAir" classname="aero.sita.digitaltwins.tests.PostTests" time="0.07"/>
+  <testcase name="postFlightLanded" classname="aero.sita.digitaltwins.tests.PostTests" time="0.063"/>
+  <testcase name="postFlightLinked" classname="aero.sita.digitaltwins.tests.PostTests" time="0.044">
+    <failure message="status code: 201, reason phrase: Created" type="io.restassured.internal.http.ResponseParseException">io.restassured.internal.http.ResponseParseException: status code: 201, reason phrase: Created
+	at aero.sita.digitaltwins.tests.PostTests.postFlightLinked(PostTests.java:283)
+Caused by: org.apache.http.ConnectionClosedException: Premature end of chunk coded message body: closing chunk expected
+	at aero.sita.digitaltwins.tests.PostTests.postFlightLinked(PostTests.java:283)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:3000/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "updateField": "flight_linked",
+    "iataAirportCode": "LGA",
+    "adi": "arrival",
+    "previous": null,
+    "current": "2022-02-01T08:42:00-0500",
+    "scheduled": "2022-02-01T07:25:00-0500",
+    "estimated": "2022-02-01T08:45:00-0500",
+    "actual": "2022-02-01T08:42:00-0500",
+    "duration": null,
+    "operationDate": null,
+    "flightRecord": {
+        "flightId": "791",
+        "actual": "20220201T08:42:000500",
+        "adi": "arrival",
+        "aircraft": "A319",
+        "departureAirportCode": "AMS",
+        "arrivalAirportCode": "LGA",
+        "city": "Haarlemmermeer",
+        "estimated": "2022-02-01T08:45:00-0500",
+        "gate": "15B",
+        "stand": "44",
+        "gateRemarkText": "Concourse B",
+        "operatingCarrier": {
+            "iata_airline": "UA",
+            "924": "1001",
+            "airline": "United Airlines",
+            "tail_number": "ivan oder"
+        },
+        "operationDate": "2022-02-01",
+        "scheduled": "2022-02-01T07:25:000500",
+        "status": "LN",
+        "statusText": "Landed",
+        "tailNumber": "ivan oder",
+        "terminal": "",
+        "paxCount": 124,
+        "standSlots": [
+            {
+                "stand": "44",
+                "start_time": "2022-02-01T08:42:00-0500",
+                "end_time": "2022-02-01T09:50:00-0500"
+            }
+        ],
+        "linkedFlight": {
+            "adi": "departure",
+            "departureAirportCode": "LGA",
+            "operatingCarrier": {
+                "iata_airline": "UA",
+                "924": "1002",
+                "airline": "United Airlines"
+            },
+            "scheduled": "2022-02-01T08:30:00-0500"
+        }
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postFlightStandUpdate" classname="aero.sita.digitaltwins.tests.PostTests" time="0.627"/>
+</testsuite>
