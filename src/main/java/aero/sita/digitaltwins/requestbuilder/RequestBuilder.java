@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 
 import aero.sita.digitaltwins.enums.PropertiesType;
 import aero.sita.digitaltwins.utils.PropertyUtils;
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
@@ -26,6 +27,7 @@ public class RequestBuilder {
 	 * @see PropertyUtils
 	 */
 	public static RequestSpecification buildRequestForGetCalls() {
+		RestAssured.useRelaxedHTTPSValidation();
 		return given()
 				.baseUri(PropertyUtils.getValue((String.valueOf(PropertiesType.BASEURL)).toLowerCase()))
 				.log()
@@ -39,6 +41,7 @@ public class RequestBuilder {
 	 * @see PropertyUtils
 	 */
 	public static RequestSpecification buildRequestForPostCalls() {
+		RestAssured.useRelaxedHTTPSValidation();
 		return given()
 				.baseUri(PropertyUtils.getValue((String.valueOf(PropertiesType.BASEURL)).toLowerCase()))
 				.contentType(ContentType.JSON)

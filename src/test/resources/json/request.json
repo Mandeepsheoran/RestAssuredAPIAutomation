@@ -3,32 +3,32 @@
    "iataAirportCode":"LGA",
    "adi":"arrival",
    "previous":null,
-   "current":"2022-02-01T08:42:00-0500",
-   "scheduled":"2022-02-01T07:25:00-0500",
-   "estimated":"2022-02-01T08:45:00-0500",
-   "actual":"2022-02-01T08:42:00-0500",
+   "current":"2022-03-16T08:42:00-0500",
+   "scheduled":"2022-03-16T07:25:00-0500",
+   "estimated":"2022-03-16T08:45:00-0500",
+   "actual":"2022-03-16T08:42:00-0500",
    "duration":null,
    "operationDate":null,
    "flightRecord":{
       "flightId":"23f91b2b-eb1d-409f-a564-678950910207",
-      "actual":"20220201T08:42:000500",
+      "actual":"2022-03-16T08:42:00-0500",
       "adi":"arrival",
       "aircraft":"A319",
       "departureAirportCode":"AMS",
       "arrivalAirportCode":"LGA",
       "city":"Haarlemmermeer",
-      "estimated":"2022-02-01T08:45:00-0500",
+      "estimated":"2022-03-16T08:45:00-0500",
       "gate":"15B",
       "stand":"44",
       "gateRemarkText":"Concourse B",
       "operatingCarrier":{
          "iata_airline":"UA",
-         "flight_number":"1001",
+         "flight_number":"fnumber",
          "airline":"United Airlines",
          "tail_number":"CGBHN"
       },
-      "operationDate":"2022-02-01",
-      "scheduled":"2022-02-01T07:25:000500",
+      "operationDate":"2022-03-16",
+      "scheduled":"2022-03-16T07:25:00-0500",
       "status":"LN",
       "statusText":"Landed",
       "tailNumber":"CGBHN",
@@ -37,8 +37,8 @@
       "standSlots":[
          {
             "stand":"44",
-            "start_time":"2022-02-01T08:42:00-0500",
-            "end_time":"2022-02-01T09:50:00-0500"
+            "start_time":"2022-03-16T08:42:00-0500",
+            "end_time":"2022-03-16T09:50:00-0500"
          }
       ],
       "linkedFlight":{
@@ -49,7 +49,7 @@
             "flight_number":"1002",
             "airline":"United Airlines"
          },
-         "scheduled":"2022-02-01T08:30:00-0500"
+         "scheduled":"2022-03-16T08:30:00-0500"
       }
    }
 }
